@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title> Exercice 9.13 </title>
+		
+		<script type ="text/javascript">
+		
+		function integerPower()
+		{
+			var b = document.getElementById( "1" ).value;
+			var e = document.getElementById( "2" ).value;
+			
+			var base = parseInt ( b );
+			var exponent = parseInt ( e );
+			var result = 1;
+		for ( var i = 1; i <= exponent ; ++i)
+			{	
+			 result = result * base;
+			}
+			
+			window.alert( " The Power is " + result + " ");
+		}
+		</script>
+	</head>
+	<body>
+	<form name = "PowerFunction" action = "#">
+	<table align="center" bgcolor="00FFFB" cellspadding=5 cellspacing=5 height=200 width=200>
+	<tr> <td colspan=4 align="center"> <label> Base: <input type="number" id="1" name="baseNumber" > </td> </tr>
+	<tr> <td colspan=4 align="center"> <label> Exponent: <input type="number" id="2" name="exponentNumber" > </td> </tr>
+	<tr> <td> <input type="button" name="B" value="Find Power" onClick="integerPower()"> </td> <td>
+	</table>
+	</form>
+	</body>
+</html>
+	

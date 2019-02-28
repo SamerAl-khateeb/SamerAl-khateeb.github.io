@@ -1,0 +1,115 @@
+#page-wrap {
+	/*display: flex;*/
+	/*justify-content: center;*/
+	text-align: left;
+	width: 95%;
+	margin: 0 auto;
+	border-style: solid;  /* to show the borders put outset */
+}
+
+ol.entry1 {
+	padding: 15px;
+	margin: 15px;
+}
+
+ul.entry {
+	list-style-type: square;
+	padding: 10px;
+	margin: 10px;
+}
+
+body {
+	font-size: 120%; /*1.2em*/
+	font-family: Roboto, sans-serif, verdana, arial, helvetica, ;
+	padding: 10px;
+	background-image: url("bg.jpg");
+	color: rgb(0, 0, 0);
+	text-align: left;
+}
+
+a {
+	color: rgb(0, 0, 0)
+}
+
+a:hover {
+	color: #FF00FF;
+}
+
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a.nav {
+	display: block;
+	width: 60px;
+}
+
+li.nav {
+	float: left;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#navigation {
+	overflow: auto;
+}
+
+#navigation li {
+	float: left;
+	list-style: none;
+	background-color: #666;
+	/* to cater for users without images */
+}
+
+#navigation a {
+	display: block;
+	background-position: top right;
+	background-repeat: no-repeat;
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#navigation span {
+	display: block;
+	background-repeat: no-repeat;
+	padding: 5px 15px;
+}
+
+#navigation a:hover {
+	background-position: right -198px;
+}
+
+#navigation a:hover span {
+	background-position: 0 -198px;
+}
+
+#navigation li ul {
+	position: absolute;
+	width: 10em;
+	left: -999em;
+	margin-left: 2px;
+	font-size: 90%;
+}
+
+#navigation li ul a, #navigation li ul a:link {
+	background-image: none;
+	padding: 5px;
+	width: 10em;
+	background-color: #666;
+}
+
+#navigation li ul a:hover {
+	background-color: #333;
+}
+
+#navigation li:hover ul, #navigation li.sfhover ul {
+	left: auto;
+}
+
+

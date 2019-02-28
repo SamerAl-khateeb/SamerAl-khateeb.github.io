@@ -1,0 +1,136 @@
+<html>
+	<head>
+			<meta charset = "utf-8">
+			<title> Exercice 11.26 </title>
+			<script type ="text/javascript">
+			
+				function convert ()
+				{
+					var a = document.getElementById( "num" ).value;
+					var b = document.getElementById( "M" ).value; 
+					var bb = new Boolean( b );				
+					var c = document.getElementById( "L" ).value; 
+					var cc = new Boolean( c );
+					var d = document.getElementById( "K" ).value;
+					var dd = new Boolean( d );					
+					var e = document.getElementById( "I" ).value;
+					var ee = new Boolean( e );
+					var f = document.getElementById( "Q" ).value;		
+					var ff = new Boolean( f );
+					var g = document.getElementById( "P" ).value;
+					var gg = new Boolean( g );				
+				
+				if ( (bb.valueOf() == true) && (ee.valueOf() == true) )
+					{
+						lengthconversion()
+					}
+				else 
+					{
+						window.alert( " This Conversion is NOT Allowed please Choose Appropriate Units ");
+					}
+					
+					
+				if ( (cc.valueOf() == true) && (ff.valueOf() == true) )
+					{
+						volumconversion()
+					}
+				else 
+					{
+						window.alert( " This Conversion is NOT Allowed please Choose Appropriate Units ");
+					}
+			
+				if ( (dd.valueOf() == true) && (gg.valueOf() == true) )
+					{
+						massconversion()
+					}
+				else 
+					{
+						window.alert( " This Conversion is NOT Allowed please Choose Appropriate Units ");
+					}			
+					
+				}
+				
+				
+				function lengthconversion()
+				{
+					var inch = 0;
+					var a = document.getElementById( "num" ).value;
+					var number = parseInt ( a );
+					var inch = number * 39.3701 ;
+					window.alert( " " + a + " Meter =  " + inch + " Inches");
+				}
+				
+				function volumconversion()
+				{
+					var quart = 0;
+					var a = document.getElementById( "num" ).value;
+					var number = parseInt ( a );
+					var quart = number * 1.05669 ;
+					window.alert( " " + a + " Liter =  " + quart + " Quarts");
+				}
+				
+				function massconversion()
+				{
+					var lb = 0;
+					var a = document.getElementById( "num" ).value;
+					var number = parseInt ( a );
+					var lb = number * 2.20462 ;
+					window.alert( " " + a + " Kilogram =  " + lb + " Pounds");
+				}
+			</script>
+	</head>
+	<body>
+		<H1><font face="Arial">Metric Conversion Example 11.26</font></H1>
+
+		<P>
+		<NOSCRIPT><h2>Sorry, you must enable Javascript to use this converter</h2></NOSCRIPT>
+
+
+		<div align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		  <tr><TD VALIGN=top WIDTH="78%" align="left">
+
+			<form name="Conversion" action="#">
+
+				<div align="left">
+
+				<table border="0" cellpadding="0" cellspacing="0" width="95%" bgcolor="#d9d9d9">
+				<tr><td width="10%" align="left" valign="top" height="170">
+						<p><h3><font face="Arial"><label>Please Enter Positive Number:</font></h3>
+						<input type ="number" id = "num" size="28" ><br></p>
+					</td>
+
+					<td width="10%" align="left" valign="top" height="170">
+						<p><h4><font face="Arial">Metric System:</font></h4>
+							<select >
+								<option id = "M" value="meter">Meter (m)</option>
+								<option id = "L" value="liter">Liter (L)</option>
+								<option id = "K" value="kg">Kilogram (Kg)</option>
+							</select> 
+							
+					</td>
+					
+					<td width="10%" align="left" valign="top" height = "170">
+						<h2><p><b> TO </b></p></h2>
+					</td>
+
+					<td width="10%" align="left" valign="top" height = "170">
+						<p><h3><font face="Arial">English System:</font></h3>
+							<select>
+								<option id = "I" value="inch">Inch (in)</option>
+								<option id = "Q" value="quart">Quart (q)</option>
+								<option id = "P" value="pound">Pound (lb)</option>
+							</select>
+					</td>
+				</tr>
+				
+				<tr><td><input type="button" name="B" value="Calculate" onClick="convert()"> </td> </tr>
+
+				</table>
+			</div>
+		  </td></tr>
+		</table>
+		</div>
+			</form>
+	</body>
+</html>

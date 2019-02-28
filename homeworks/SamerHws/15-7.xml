@@ -1,0 +1,44 @@
+<?xml version = "1.0"?>
+<?xml-stylesheet type = "text/xsl" href = "15-9.xsl"?>
+
+<product name = "Cookies">
+<product1 name = "Grandma White's Cookies">
+	<servingsize>1 package</servingsize>
+	<calories>
+		<total>260 Calories</total>
+		<fat>100 Calories</fat>
+	</calories>
+	<fat>
+		<total>11 grams</total>
+		<saturated>2 grams</saturated>
+	</fat>
+	<cholesterol>5 milligrams</cholesterol>
+	<sodium>210 milligrams</sodium>
+	<carbohydrates>
+		<total>36 grams</total>
+		<fiber>2 grams</fiber>
+		<sugars>15 grams</sugars>
+	</carbohydrates>
+	<protein>5 grams</protein>
+</product1>
+
+<product2 name = "Walmart Cookies">
+	<servingsize>1 package</servingsize>
+	<calories>
+		<total>300 Calories</total>
+		<fat>150 Calories</fat>
+	</calories>
+	<fat>
+		<total>15 grams</total>
+		<saturated>3 grams</saturated>
+	</fat>
+	<cholesterol>9 milligrams</cholesterol>
+	<sodium>215 milligrams</sodium>
+	<carbohydrates>
+		<total>35 grams</total>
+		<fiber>20 grams</fiber>
+		<sugars>15 grams</sugars>
+	</carbohydrates>
+	<protein>10 grams</protein>
+</product2>
+</product>
