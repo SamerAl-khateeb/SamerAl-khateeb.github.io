@@ -28,7 +28,8 @@ body {
 }
 
 a {
-	color: rgb(0, 0, 0)
+	color: navy;
+	text-decoration: none;
 }
 
 a:hover {
