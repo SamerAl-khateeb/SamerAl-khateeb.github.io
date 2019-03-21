@@ -2,7 +2,7 @@
 	/*display: flex;*/
 	/*justify-content: center;*/
 	text-align: left;
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	border-style: solid;  /* to show the borders put outset */
 }
@@ -20,10 +20,10 @@ ul.entry {
 
 body {
 	font-size: 120%; /*1.2em*/
-	font-family: Roboto, sans-serif, verdana, arial, helvetica, ;
+	font-family: serif, oswald, verdana, arial, helvetica;
 	padding: 10px;
 	background-image: url("bg.jpg");
-	color: rgb(0, 0, 0);
+	/*color: rgb(0, 0, 0);*/
 	text-align: left;
 }
 
@@ -82,7 +82,7 @@ li.nav {
 	padding: 5px 15px;
 }
 
-#navigation a:hover {
+/*#navigation a:hover {
 	background-position: right -198px;
 }
 
@@ -105,9 +105,9 @@ li.nav {
 	background-color: #666;
 }
 
-#navigation li ul a:hover {
+#navigation ul li a:hover {
 	background-color: #333;
-}
+} 
 
 #navigation li:hover ul, #navigation li.sfhover ul {
 	left: auto;
