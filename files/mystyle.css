@@ -5,8 +5,8 @@ body
 	font-family: serif, oswald, verdana, arial, helvetica;
 	padding: 10px;
 	background-image: url("bg.jpg");
-	/*color: rgb(0, 0, 0);*/
 	text-align: left;
+	/*color: rgb(0, 0, 0);*/
 }
 
 #page-wrap 
@@ -32,7 +32,10 @@ a:hover
 }
 
 
-
+* {
+	padding: 0;
+	margin: 0;
+}
 
 
 
@@ -71,10 +74,7 @@ li.nav
 	float: left;
 }
 
-* {
-	padding: 0;
-	margin: 0;
-}
+
 
 #navigation 
 {
@@ -111,6 +111,10 @@ li.nav
 		color: white;
 
 } 
+
+
+
+
 
 
 
