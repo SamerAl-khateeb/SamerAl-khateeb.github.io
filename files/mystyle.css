@@ -1,24 +1,6 @@
-#page-wrap {
-	/*display: flex;*/
-	/*justify-content: center;*/
-	text-align: left;
-	width: 100%;
-	margin: 0 auto;
-	border-style: solid;  /* to show the borders put outset */
-}
 
-ol.entry1 {
-	padding: 15px;
-	margin: 15px;
-}
-
-ul.entry {
-	list-style-type: square;
-	padding: 10px;
-	margin: 10px;
-}
-
-body {
+body 
+{
 	font-size: 120%; /*1.2em*/
 	font-family: serif, oswald, verdana, arial, helvetica;
 	padding: 10px;
@@ -27,27 +9,65 @@ body {
 	text-align: left;
 }
 
-a {
+#page-wrap 
+{
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*text-align: left; */
+	width: 100%;
+	margin: 0 auto;
+	border-style: solid;  /* to show the borders put outset */
+}
+
+
+a 
+{
 	color: navy;
 	text-decoration: none;
 }
 
-a:hover {
-	color: #FF00FF;
+a:hover 
+{
+	color: magenta;
 }
 
-ul.nav {
+
+
+
+
+
+
+
+ol.entry1 
+{
+	padding: 15px;
+	margin: 15px;
+}
+
+ul.entry 
+{
+	list-style-type: square;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+
+ul.nav 
+{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-a.nav {
+a.nav 
+{
 	display: block;
 	width: 60px;
 }
 
-li.nav {
+li.nav 
+{
 	float: left;
 }
 
@@ -56,38 +76,52 @@ li.nav {
 	margin: 0;
 }
 
-#navigation {
+#navigation 
+{
 	overflow: auto;
 }
 
-#navigation li {
+#navigation li 
+{
 	float: left;
 	list-style: none;
-	background-color: #666;
+	background-color: gray;
 	/* to cater for users without images */
 }
 
-#navigation a {
+#navigation a 
+{
 	display: block;
 	background-position: top right;
 	background-repeat: no-repeat;
-	color: #FFF;
 	text-decoration: none;
 	font-weight: bold;
 }
 
-#navigation span {
+#navigation span 
+{
 	display: block;
-	background-repeat: no-repeat;
-	padding: 5px 15px;
+	/*background-repeat: no-repeat;*/
+	padding: 5px 10px;
+	color: white;
 }
 
-/*#navigation a:hover {
-	background-position: right -198px;
-}
+#navigation li a:hover span
+{
+		color: white;
 
-#navigation a:hover span {
+} 
+
+
+
+
+/*#navigation a:hover span {
 	background-position: 0 -198px;
+
+}
+
+#navigation a:hover {
+	background-position: right -198px;
 }
 
 #navigation li ul {
