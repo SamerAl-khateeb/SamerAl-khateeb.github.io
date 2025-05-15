@@ -1,0 +1,331 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+
+nav ul li a:hover {
+  color: #00b0ff;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.contact-info a img {
+  max-width: 40px;
+  margin-right: 10px;
+  margin-left: 0;
+  display: inline-block;
+}
+
+.contact-info a img:hover {
+  opacity: 0.8;
+}
+
+/* Main Content */
+.main-content {
+  margin: 20px 0;
+}
+
+.bio{
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio h2 {
+  margin-bottom: 10px;
+}
+
+.bio p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.courses, .research {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.courses ul, .research ul {
+  list-style-type: none;
+}
+
+.courses li, .research li {
+  margin-bottom: 8px;
+}
+
+.courses a, .research a {
+  color: #333;
+  text-decoration: none;
+}
+
+.courses a:hover, .research a:hover {
+  color: #00b0ff;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* Education Page Specific */
+#page-wrap {
+  margin: 20px;
+}
+
+#navigation {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#navigation li {
+  margin: 0 15px;
+}
+
+
+#navigation li a {
+  color: #fff;  /* <-- change this from #333 to #fff */
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+#navigation li a:hover {
+  color: #00b0ff;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-spacing: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table td {
+  vertical-align: top;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.entry {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.entry li {
+  margin-bottom: 8px;
+}
+
+.entry_num {
+  padding-left: 20px;
+}
+
+.entry_num li {
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Navigation Menu: stack vertically */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .main-title {
+    font-size: 2em;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-info a img {
+    max-width: 30px;
+    margin: 5px;
+  }
+
+  .bio, .courses, .research {
+    padding: 15px;
+  }
+
+  table {
+    padding: 15px;
+    font-size: 0.9em;
+  }
+
+  h2, h3 {
+    font-size: 1.4em;
+  }
+}
+
+
+/* Hamburger Icon */
+.nav-toggle {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* Hide menu on small screens */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    text-align: right;
+  }
+
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  nav ul.nav-links.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Default styling for desktop */
+.title-bar {
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Hamburger icon styling */
+.nav-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
